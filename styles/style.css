@@ -1,0 +1,221 @@
+/* --------- GENERAL HOMEPAGE --------- */
+
+body {
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrap-homepage {
+    background-image: url('../images/hotel_home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100%;
+}
+
+/* --------- NAVIGATION HOMEPAGE--------- */
+
+
+.main-nav {
+    background-color: darkred;
+    border-bottom: 2px solid midnightblue;
+}
+
+.main-nav__list {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav__item {
+    margin-right: 25px;
+}
+
+.main-nav__link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.main-nav__link:hover {
+    text-decoration: underline grey;
+
+}
+
+
+
+/* --------- ACCUEIL HOMEPAGE--------- */
+
+
+.home h1 {
+    font-size: 65px;
+    margin-top: 300px;
+    text-align: center;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.home h2 {
+    font-size: 50px;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* --------- CARD HOTEL LIST--------- */
+
+
+.list-hotel {
+    width: 1400px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+
+.card-hotel {
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 30px 50px 0;
+    box-shadow: 1px 2px 10px grey;
+    transition: transform 0.3s ease;
+}
+
+.card-hotel:hover {
+    transform: scale(1.05);
+}
+
+.card-hotel h2 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.card-hotel__img {
+    width: auto;
+}
+
+.card-hotel__img img {
+    width: 100%;
+    display: block;
+}
+
+.card-hotel__title {
+    text-align: center;
+    padding: 15px;
+    line-height: 20px;
+    border-bottom: 1px dashed black;
+    font-size: 20px;
+}
+
+.card-hotel__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    height: 100px;
+    padding: 25px 0;
+    border-bottom: 1px dashed black;
+    font-size: 20px;
+}
+
+.card-hotel__reserver {
+    text-align: center;
+    line-height: 32px;
+}
+
+.card-hotel__reserver a {
+    color: darkred;
+    font-size: 18px;
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+}
+
+
+
+
+/* --------- BOOKING FORM--------- */
+
+
+.booking {
+    width: 1400px;
+    margin: 50px auto;
+}
+
+.booking h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed black;
+    box-shadow: 0px 0px 30px black;
+    border-radius: 15px;
+    padding: 20px 50px;
+    margin-top: 50px;
+}
+
+.booking-form-group {
+    font-size: 20px;
+    margin:  25px auto;
+    width: 50%;
+}
+
+.booking-form-group input, .booking-form-group select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.booking-form-submit {
+    width: 250px;
+    border-radius: 5px;
+    padding: 25px 15px;
+    margin: auto;
+    background-color: darkred;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.booking-form-submit:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+.booking-form-submit:active {
+    box-shadow: 5px 5px 12px black;
+    transform: scale(0.95);
+}
+
+.error_txt {
+    margin: 0 auto;
+    width: 50%;
+    padding: 15px;
+    background-color: #fab4c0;
+    color: red;
+    border: 2px solid darkred;
+    border-radius: 5px;
+}
+
+.success_txt {
+    margin: 0 auto;
+    width: 50%;
+    padding: 15px;
+    background-color: #ccfab4;
+    color: green;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+}
